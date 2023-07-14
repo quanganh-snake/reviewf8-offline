@@ -122,4 +122,3 @@
 
 - Xin chào, các đoạn mã python, js, css là viết nghịch chơi chơi nên các bạn đừng quan tâm nhiều nhé !
   - Mình không tối ưu, viết chạy được là được hihi
-# reviewf8-offline
