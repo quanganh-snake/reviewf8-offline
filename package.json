@@ -1,0 +1,13 @@
+{
+  "name": "tester",
+  "description": "Dương Test Bài học viên",
+  "main": "server/server.py",
+  "scripts": {
+    "dev": "python server/server.py",
+    "create": "python scripts/createList.py",
+    "push": "node scripts"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}

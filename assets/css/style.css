@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
+
+:root {
+  --color_main: #4700a3;
+  --color_second: #00c0fa;
+}
+::selection {
+  background-color: var(--color_second);
+  color: var(--color_main);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+  transition-property: color, background-color;
+  border: none;
+  outline: none;
+}
+body > *:not(ul, li, h1, h2) {
+  margin-left: 1.5rem;
+}
+ul li {
+  margin-left: 2rem;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+  margin: auto;
+  padding: 60px;
+}
+p,
+span,
+a {
+  letter-spacing: -0.5px;
+  word-spacing: -0.5px;
+}
+h1,
+h2 {
+  color: var(--color_main);
+}
+a {
+  text-decoration: none;
+  color: var(--color_second);
+  font-weight: bold;
+}
+pre code {
+  display: block;
+  padding: 20px;
+  background-color: #99999970;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+code {
+  color: var(--color_main);
+  font-family: "Source Code Pro", monospace;
+}
+ul li p code::before {
+  content: "`";
+}
+ul li p code::after {
+  content: "`";
+}
+img {
+  max-width: 700px;
+  height: auto;
+  border: 2px solid var(--color_main);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+strong {
+  color: var(--color_main);
+}
+
+hr {
+  height: 0.1px;
+  background-color: var(--color_main);
+  filter: opacity(0.3);
+}
+span[class="x-icon"]::before {
+  content: attr(data-index);
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color_main);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 2px solid var(--color_second);
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 32px var(--color_second));
+}
+
+.back-btn {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  padding: 4px 12px 4px;
+  background-color: var(--color_second);
+  color: var(--color_main);
+  font-size: 1.1rem;
+  border-radius: 99px;
+  transition: all 0.3s;
+}
+.back-btn:hover {
+  background-color: var(--color_main);
+  color: var(--color_second);
+  border-radius: 4px;
+}
